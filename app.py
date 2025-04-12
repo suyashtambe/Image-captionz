@@ -11,7 +11,7 @@ CORS(app)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Load the pretrained GPT-2 model and tokenizer from the saved directory
-model_name = r'C:\Users\Suyash Tambe\Desktop\caption generator\gpt_model'
+model_name = 'caption generator\gpt_model'
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 model = GPT2LMHeadModel.from_pretrained(model_name).to(device)
 
